@@ -13,3 +13,5 @@ Clone the repository and open the index.html file.
 ### Website
 
 (GitHub pages do not support streaming from RTVSLO at the moment.)
+
+![screenshot](screenshots/screenshot.jpeg)
