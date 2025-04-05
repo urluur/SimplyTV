@@ -4,56 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SimplyTV</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <div> <!-- main container -->
-        <div> <!-- first column: channels -->
-            <a href="#">
-                <span>1</span> <!-- channel number (keyboard shortcut) -->
-                SLO 1 <!-- channel name -->
-            </a>
-            <a href="#">
-                <span>2</span>
-                SLO 2
-            </a>
-            <a href="#">
-                <span>3</span>
-                SLO 3
-            </a>
-            <a href="#">
-                <span>4</span>
-                Koper
-            </a>
-            <a href="#">
-                <span>5</span>
-                Maribor
-            </a>
-            <a href="#">
-                <span>6</span>
-                MMC
-            </a>
-            <a href="#">
-                <span>7</span>
-                Veseljak
-            </a>
-            <a href="#">
-                <span>8</span>
-                Exodus
-            </a>
-            <a href="#">
-                <span>9</span>
-                Nova24
-            </a>
-            <a href="#">
-                <span>0</span>
-                2.Nova24
-            </a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-1 col-sm-2 col-12 list-group bg-dark d-flex flex-column">
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>1</span>
+                    SLO1
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>2</span>
+                    SLO2
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>3</span>
+                    SLO3
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>4</span>
+                    Koper
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>5</span>
+                    Maribor
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1" >
+                    <span>6</span>
+                    MMC
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>7</span>
+                    Veseljak
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>8</span>
+                    Exodus
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>9</span>
+                    Nova24
+                </a>
+                <a href="#" class="list-group-item list-group-item-action flex-grow-1">
+                    <span>0</span>
+                    2.Nova24
+                </a>
+            </div>
+            <div class="col-xl-11 col-sm-10 col-12 p-0 m-0"> <!-- second column: video player -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg" alt="Video Player" style="width: 100%; height: auto;">
+            </div>
         </div>
+    </div>
 
-        <div> <!-- second column: video player -->
-            <!-- add this example image: https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg" alt="Video Player" style="width: 100%; height: auto;">
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </body>
 </html>
