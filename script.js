@@ -43,15 +43,23 @@ programLinks.forEach(link => {
 
 document.addEventListener('keydown', (event) => {
     const key = event.key;
+    let index;
+
     if (key >= '1' && key <= '9') {
-        const index = parseInt(key, 10) - 1;
-        if (index < programLinks.length) {
-            activateChannel(programLinks[index]);
-        }
+        index = parseInt(key, 10) - 1;
     } else if (key === '0') {
-        const index = 9;
-        if (index < programLinks.length) {
-            activateChannel(programLinks[index]);
-        }
+        index = 9;
+    } else {
+        const keyToIndexMap = {
+            q: 10, // HRT 1
+            w: 11, // HRT 2
+            e: 12 // HRT 3
+            // Add more if needed
+        };
+        index = keyToIndexMap[key];
+    }
+
+    if (index !== undefined && index < programLinks.length) {
+        activateChannel(programLinks[index]);
     }
 });
