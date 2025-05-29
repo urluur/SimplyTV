@@ -9,6 +9,7 @@ const videoPlayer = videojs('video-player', {
     }
 });
 const iframePlayer = document.getElementById('iframe-player');
+const videoInstructions = document.getElementById('video-instructions');
 
 function activateChannel(link) {
     const videoSrc = link.dataset.videoSrc;
@@ -28,6 +29,10 @@ function activateChannel(link) {
         iframePlayer.style.display = 'block';
         iframePlayer.src = iframeSrc;
         iframePlayer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    if (videoSrc || iframeSrc) {
+        videoInstructions.style.display = 'none';
     }
 
     programLinks.forEach(l => l.classList.remove('active'));
@@ -54,7 +59,6 @@ document.addEventListener('keydown', (event) => {
             q: 10, // HRT 1
             w: 11, // HRT 2
             e: 12 // HRT 3
-            // Add more if needed
         };
         index = keyToIndexMap[key];
     }
@@ -62,4 +66,8 @@ document.addEventListener('keydown', (event) => {
     if (index !== undefined && index < programLinks.length) {
         activateChannel(programLinks[index]);
     }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    videoInstructions.style.display = 'block';
 });

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grandma's TV</title>
+    <title>SimplyTV</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
@@ -14,6 +14,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-1 col-sm-2 col-12 list-group bg-dark d-flex flex-column">
+                <div class="list-group-item d-flex justify-content-center align-items-center flex-column">
+                    <img src="img/simplytv_logo.png" style="width: 80px; height: 40px;"></img>
+                </div>
                 <a href="#" class="list-group-item list-group-item-action flex-grow-1"
                     data-iframe-src="https://365.rtvslo.si/embed/tv.slo1?a=1"><span>1</span>SLO1</a>
                 <a href="#" class="list-group-item list-group-item-action flex-grow-1"
@@ -43,6 +46,9 @@
                 </div>
             <div class="col-xl-11 col-sm-10 col-12 p-0 m-0">
                 <div class="video-container">
+                    <div id="video-instructions" class="video-instructions">
+                        <strong>Press the number of the desired channel.</strong>
+                    </div>
                     <div id="video-player-container" style="display: none;">
                         <video id="video-player" class="video-js vjs-default-skin" controls preload="auto"></video>
                     </div>
